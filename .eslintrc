@@ -1,0 +1,27 @@
+{
+    "extends": "airbnb-base",
+    "parser": "typescript-eslint-parser",
+    "plugins": [
+        "typescript",
+        "import"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "rules": {
+        "padded-blocks": "off",
+        "indent": ["error", 4],
+        "comma-dangle": "off"
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"],
+                "extensions": [".ts", ".js"]
+            }
+        }
+    }
+}
