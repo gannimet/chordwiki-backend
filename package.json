@@ -7,8 +7,7 @@
     "test": "tsc && mocha --recursive \"./dist/**/*.spec.js\"",
     "lint": "eslint src --ext ts",
     "validate": "npm-run-all lint test",
-    "precommit": "npm run validate",
-    "prepush": "npm run validate"
+    "precommit": "npm run validate"
   },
   "keywords": [
     "chords",
@@ -27,6 +26,7 @@
     "eslint": "5.5.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-mocha": "^5.2.0",
     "eslint-plugin-typescript": "0.12.0",
     "husky": "0.14.3",
     "mocha": "5.2.0",
